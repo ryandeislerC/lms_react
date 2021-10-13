@@ -3,8 +3,7 @@
 
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { useHistory } from 'react-router-dom';
-import './header.css';
-<header className="css"></header>
+
 function Header() {
     //replace the following line with correct access to Java DB
     let user = JSON.parse(localStorage.getItem('user-info'))
