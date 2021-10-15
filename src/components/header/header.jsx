@@ -1,6 +1,7 @@
 //link to react-bootstrap documentation
 //https://react-bootstrap.github.io/components/alerts/
 
+import { Paper } from '@material-ui/core';
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { useHistory } from 'react-router-dom';
 
@@ -18,6 +19,7 @@ function Header() {
 
     return(
         <div>
+            <Paper elevation={1}>
             <Navbar bg='light'>
                 <Container>
                     <Navbar.Brand href="/">The SKRRT Library</Navbar.Brand>
@@ -48,6 +50,7 @@ function Header() {
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
+            </Paper>
         </div>
     )
 }
