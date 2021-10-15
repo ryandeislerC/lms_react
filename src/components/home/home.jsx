@@ -1,5 +1,5 @@
 import React from 'react';
-import Sidebar from '../sidebar';
+import Sidebar from '../sidebar/sidebar';
 import { Grid, Typography } from '@material-ui/core';
 import BookList from '../books/list';
 

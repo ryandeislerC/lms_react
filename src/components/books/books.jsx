@@ -1,8 +1,6 @@
-import { Grid, Typography } from '@material-ui/core';
+import { Grid } from '@material-ui/core';
 import React from 'react';
-import { Table } from 'react-bootstrap';
-import { bookList } from '../../data/bookList';
-import Sidebar from '../sidebar';
+import Sidebar from '../sidebar/sidebar';
 import BookList from './list';
 
 class Books extends React.Component {
@@ -12,33 +10,7 @@ class Books extends React.Component {
     }
 
     render() {
-        const books = []
-        bookList.forEach(b => {
-            books.push(<tr>
-                <td>{b.id}</td>
-                <td>{b.title}</td>
-                <td>{b.author}</td>
-                <td>{b.genre}</td>
-                <td>{b.returnDate}</td>
-            </tr>);
-        });
-        // return <div>
-        //     <h5>List of Books</h5>
-        //     <Table striped bordered hover>
-        //         <thead>
-        //             <tr>
-        //                 <th>ID</th>
-        //                 <th>Title</th>
-        //                 <th>Author</th>
-        //                 <th>Genre</th>
-        //                 <th>Return Date</th>
-        //             </tr>
-        //         </thead>
-        //         <tbody>
-        //                 {books}
-        //         </tbody>
-        //     </Table>
-        // </div>;
+
         return (
             <div>
                 <Grid container spacing={2}>
