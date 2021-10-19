@@ -1,4 +1,4 @@
-import { Table, TableContainer, TableCell, TableHead, TableRow, TableBody, Typography }
+import { Table, TableContainer, TableCell, TableHead, TableRow, TableBody, Typography, TextField }
     from "@material-ui/core";
 import {Paper} from "@material-ui/core";
 
@@ -30,6 +30,9 @@ export default function BookList() {
             <Typography variant="h4" color="inherit" component="div">
                 <b>List of Books</b>
             </Typography>
+            
+            <TextField id='standard-basic' label='Search for a book'/>
+
             <TableContainer>
                 <Table sx={{minWidth: 0}}>
                     <TableHead>
@@ -62,7 +65,7 @@ export default function BookList() {
                                 sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                             >   
                                 <TableCell component="th" scope="row">
-                                    {row.title}
+                                            {row.title}
                                 </TableCell>
                                 <TableCell >{row.author}</TableCell>
                                 <TableCell >{row.Genre}</TableCell>

@@ -22,7 +22,7 @@ function Header() {
             <Paper elevation={1}>
             <Navbar bg='light'>
                 <Container>
-                    <Navbar.Brand href="/">The SKRRT Library</Navbar.Brand>
+                    <Navbar.Brand href="/">The SKKRT Library</Navbar.Brand>
                     <Nav>
                         <Nav.Link href='/'>Home</Nav.Link>
                         <Nav.Link href='/books'>Books</Nav.Link>
